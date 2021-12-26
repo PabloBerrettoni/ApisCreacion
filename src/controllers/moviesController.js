@@ -66,7 +66,7 @@ const moviesController = {
         .catch(error => res.send(error))
     },
     create: function (req,res) {
-        db.Movies.create(
+        db.Movie.create(
             {
                 title: req.body.title,
                 rating: req.body.rating,
